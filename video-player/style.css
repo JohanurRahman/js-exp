@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.player {
+  max-width: 750px;
+  position: relative;
+}
+
+.video {
+  width: 100%;
+}
+
+.buttons {
+  background: none;
+  border: 0;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  outline: 0;
+  padding: 5px;
+  cursor: pointer;
+  max-width: 50px;
+}
+
+.controls {
+  display: flex;
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  flex-wrap: wrap;
+  background: #000;
+}
+
+.controls > * {
+  flex: 1;
+}
+
+.progress {
+  flex: 10;
+  display: flex;
+  flex-basis: 100%;
+  height: 10px;
+  background: grey;
+}
+
+.progress__filled {
+  background: red;
+}

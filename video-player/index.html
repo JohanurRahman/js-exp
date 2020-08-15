@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+</head>
+<body>
+
+<div class="player">
+
+    <video class="video viewer" src="pip.mp4" onclick="togglePlay()"></video>
+
+    <div class="controls">
+        <div class="progress">
+            <div class="progress__filled"></div>
+        </div>
+
+        <!-- Play / Pause Button -->
+        <span class="material-icons buttons toggle">play_arrow</span>
+
+        <!-- Rewind -->
+        <span class="material-icons buttons" onclick="skip('rewind')"> replay_10 </span>
+
+        <!-- Forward -->
+        <span class="material-icons buttons" onclick="skip('forward')"> forward_10 </span>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
